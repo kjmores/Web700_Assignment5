@@ -1,0 +1,164 @@
+/* Navigation links */
+.navbar-nav li {
+	animation: slideIn 0.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Add design to the navigation links */
+.navbar-nav li a {
+	color: #333;
+	text-decoration: none;
+	padding: 10px;
+	transition: background-color 0.3s ease;
+}
+
+.navbar-nav li a:hover {
+	background-color: #ffa1ef;
+}
+
+/* Background */
+body {
+	background: linear-gradient(-45deg, #fbe3e8, #FEF9C7, #ebf6f5, #9FEDD7);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Tables */
+table {
+	border-collapse: collapse;
+	width: 100%;
+	font-family: Arial, sans-serif;
+}
+
+th, td {
+	border: 1px solid #c542b8cc;
+	padding: 8px;
+	text-align: left;
+}
+
+th {
+	background-color: #eb84d1;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+caption {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* HR */
+.custom-hr {
+	border: none;
+	height: 2px;
+	background-color: #eb84d1;
+}
+
+/* Student Form */
+.w3-container {
+	background-color: #fae3f4;
+	padding: 25px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.w3-input {
+	position: relative;
+}
+
+.w3-input .icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 10px;
+}
+
+.w3-input .w3-input-field {
+	padding-left: 30px;
+	width: 100%;
+}
+
+/* Footer */
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #474747;
+	padding: 8px;
+	text-align: center;
+}
+
+.social-icons {
+	margin-bottom: 10px;
+}
+
+.social-icon {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: #333;
+	color: #fff;
+	border-radius: 50%;
+	margin-right: 10px;
+	text-align: center;
+	line-height: 30px;
+	transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+	background-color: #fae3f4;
+}
+
+.footer p {
+	margin-bottom: 0;
+	color: #ffffff;
+	font-size: 12px;
+}
+
+
+/*404 Page*/
+
+.middle-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: 80%;
+	background-image: url("https://www.itxchange.com/W0RdPr355/wp-content/uploads/2019/01/404-error.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+

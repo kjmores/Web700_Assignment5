@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WEB700</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="/theme.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			<main class="col-md-12">
+				<br><br>
+
+				<!-- Start your code here -->
+				<article class="post">
+					<header>
+						<div class="title">
+							<h2><a href="#">Student Information</a></h2>
+							<p>This is where you can add student data and information.</p>
+						</div>
+						<hr class="custom-hr"> 
+					</header>
+
+					<form method="POST" action="/students/add" class="w3-container">
+						<p>
+							<br>
+							<h5><strong>Personal Information</strong></h5>
+
+							<div class="w3-input w3-border w3-sand">
+								<i class="fa fa-user icon"></i>
+								<input class="w3-input-field" name="firstName" type="text" id="firstName" placeholder="First Name" required>
+							</div>
+						</p>
+						<p>
+							<div class="w3-input w3-border w3-sand">
+								<i class="fa fa-user icon"></i>
+								<input class="w3-input-field" name="lastName" type="text" id="lastName" placeholder="Last Name" required>
+							</div>
+						</p>
+						<p>
+							<div class="w3-input w3-border w3-sand">
+								<i class="fa fa-envelope icon"></i>
+								<input class="w3-input-field" name="email" type="email" id="email" placeholder="Email" required>
+							</div>
+						</p>
+						<p> 
+							<div class="w3-row-padding">
+								<div class="w3-third">
+									<div class="w3-input w3-border w3-sand">
+										<i class="fa fa-home icon"></i>
+										<input class="w3-input-field" type="text" name="addressStreet" id="addressStreet" placeholder="Address (Street)">
+									</div>
+								</div>
+								<div class="w3-third">
+									<div class="w3-input w3-border w3-sand">
+										<i class="fa fa-map-marker-alt icon"></i>
+										<input class="w3-input-field" type="text" name="addressCity" id="addressCity" placeholder="Address (City)">
+									</div>
+								</div>
+								<div class="w3-third">
+									<div class="w3-input w3-border w3-sand">
+										<i class="fa fa-map icon"></i>
+										<input class="w3-input-field" type="text" name="addressProvince" id="addressProvince" placeholder="Address (Province)">
+									</div>
+								</div>
+							</div>
+						</p>
+						<br>
+						<h5><strong>Academic Information</strong></h5>
+						<br>
+						<div class="academic-info-row">
+							<b style="color: black !important; margin-left: 15px;">College Employment:</b>
+							<b style="color: black !important; margin-left: 175px;">Enrollment Status:</b>
+							<b style="color: black !important; margin-left: 190px;">Enrolled in Course:</b>
+						</div>
+						<div class="buttons-info-row">
+							<input class="w3-check" type="checkbox" checked="checked" name="TA" value="on" id="TA">
+							<label style="margin-right: 190px;">Teaching Assistant</label>
+							<input class="w3-radio" type="radio" name="status" value="Full Time" checked id="status">
+							<label style="margin-right: 30px;">Full Time</label>
+							<input class="w3-radio" type="radio" name="status" value="Part Time" id="statusPartTime">
+							<label style="margin-right: 120px;">Part Time</label>
+							<select class="w3-select w3-border w3-sand" name="course" style="width: 30% !important;" id="course">
+								<option value="" disabled selected>&nbsp;Choose your course option:</option>
+								<option value="1">&nbsp;Relational Database Design and Implementation</option>
+								<option value="2">&nbsp;Java Programming</option>
+								<option value="3">&nbsp;Introduction to Cloud Computing</option>
+								<option value="4">&nbsp;Database Administration and Management&nbsp;</option>
+								<option value="5">&nbsp;Web Programming</option>
+								<option value="6">&nbsp;Database Connectivity Using Java</option>
+								<option value="7">&nbsp;Accessing Big Data</option>
+								<option value="8">&nbsp;Datawarehousing</option>
+								<option value="9">&nbsp;Service Oriented Architecture</option>
+								<option value="10">&nbsp;Security in Databases and Web Applications&nbsp;</option>
+								<option value="11">&nbsp;Work Term Preparation (Work-Integrated Learning option only)</option>
+							</select>
+						</div>
+						<hr class="custom-hr"> 
+						<button class="w3-btn w3-sand" style="margin-left: 900px;">Add Student</button>
+						<h2 style="padding-top: 10px;"></h2>
+					</form>
+
+				</article>
+				<!-- End your code here  -->
+
+			</main>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
